@@ -23,6 +23,7 @@ pipeline {
 			}
 			steps {
 				echo "Publishing ..."
+				build job: 'deploy-to-dev'
 			}
 		}
 	}
